@@ -9,6 +9,7 @@ pipeline {
       stage('Build') {
          steps {
             echo 'Building or Resolve Dependencies!'
+            sh 'bundle install'
          }
       }
      stage ('Test') {
