@@ -1,7 +1,7 @@
 pipeline {
    agent {
        docker {
-           image 'ruby'
+           image 'anadsonpassos/quarentenarubywd'
        }
    }
 
@@ -9,6 +9,7 @@ pipeline {
       stage('Build') {
          steps {
             echo 'Building or Resolve Dependencies!'
+            sh 'rm -f Gemfile.lock'
             sh 'bundle install'
          }
       }
