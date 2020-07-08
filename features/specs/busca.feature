@@ -3,7 +3,7 @@
 
 @busca @appVersion @catalogo
 Funcionalidade: Busca
-  Eu como cliente 
+  Eu como cliente novo 
   Quero buscar produtos
   Para visualizar mais informações sobre eles
 
