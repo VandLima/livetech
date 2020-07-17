@@ -15,7 +15,7 @@ Cenário: Realizar Busca Por Um Produto Valido
   Quando eu buscar o produto com nome "produto_valido_1"
   Então devo estar na tela de busca valida
 
-@negativo @negativo @dailus @regressao
-Cenário: Realizar Busca Por Um Produto Invalido
-  Quando eu buscar o produto com nome "produto_invalido_1"
-  Então devo estar na tela de busca invalida
+# @negativo @negativo @dailus @regressao
+# Cenário: Realizar Busca Por Um Produto Invalido
+#   Quando eu buscar o produto com nome "produto_invalido_1"
+#   Então devo estar na tela de busca invalida
