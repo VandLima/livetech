@@ -1,7 +1,7 @@
 Dado(/^que eu esteja na home do site$/) do
     ENV['env'] == nil ? @profile_loja = 'HOM' : @profile_loja = ENV['env']
    
-    puts " >> RUN PROFILE: " + @profile_loja
+    #puts " >> RUN PROFILE: " + @profile_loja
    
     case @profile_loja  
       when "CI"  
