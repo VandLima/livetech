@@ -1,5 +1,5 @@
 default: --no-source --color -p json --format pretty -f rerun --out rerun_defeult
-regressao: --no-source --color --format pretty --format progress -t 'not @ignore' -f rerun --out rerun_regressao -f html -o reports/report.html
+regressao: --no-source --color --format pretty --format progress -t 'not @ignore' -f rerun --out rerun_regressao -f html -o reports/report.json
 regressao_ci: --no-source --color --format pretty --format progress -p headless -t 'not @ignore' -f rerun --out rerun_regressao_ci --format=message -o reports/report.json
 json: --format=message --out=reports/report.json
 html: --format html --out=reports/report.html
