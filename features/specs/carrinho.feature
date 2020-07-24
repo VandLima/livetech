@@ -11,7 +11,7 @@ Funcionalidade: Carrinho
 Contexto: Adicionar produtos no carrinho
   Dado que eu esteja na home do site
 
-@positivo @dailus @regressao_ci
+@positivo @dailus @regressao
 Cenário: Validar que o produto foi adicionado corretamente ao carrinho
   Quando adicionar um produto no carrinho
   Então produto deve ser apresentado no carrinho
