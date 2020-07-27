@@ -11,7 +11,7 @@ Before do |scenario|
     $store_id = ENV['store_id']
     $dunit = true
     $first = true
-    #$feature = scenario.feature.name
+    $feature = scenario.feature.name
     $app = App.new($store_id)
   end
     @mass_bkp = (YAML.load_file('./features/fixtures/mass.yaml'))
