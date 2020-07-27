@@ -1,6 +1,6 @@
 default: --no-source --color -p json --format pretty -f rerun --out rerun_defeult
 regressao: --no-source --color --format pretty --format progress -t 'not @ignore' -f rerun --out rerun_regressao -f html -o reports/report.html
-regressao_ci: --no-source --color --format pretty --format progress -p headless -t 'not @ignore' -f rerun --out rerun_regressao_ci --format=json -o reports/report.json
+regressao_ci: --no-source --color --format pretty --format progress -p headless -t 'not @ignore' -f rerun --out rerun_regressao_ci --format json -o reports/report.json
 json: --format json --out=reports/report.json
 html: --format html --out=reports/report.html
 ## cancela imediatamente a execução dos testes, se o primeiro cenário falhar  --fail-fast
