@@ -16,7 +16,7 @@ pipeline {
      stage ('Test') {
          steps {
              echo 'Running regression tests'
-             sh 'bundle exec cucumber -p dailus -p ci -t @regressao'
+             sh 'bundle exec cucumber -p dailus -p ci -t @regressao_ci'
          }
          post {
              always {
