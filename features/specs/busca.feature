@@ -10,7 +10,7 @@ Funcionalidade: Busca
 Contexto: Acessar a loja
    Dado que eu esteja na home do site
 
-@positivo @dailus @regressao
+@positivo @dailus @regressao_ci
 Cenário: Realizar Busca Por Um Produto Valido
   Quando eu buscar o produto com nome "produto_valido_1"
   Então devo estar na tela de busca valida
