@@ -1,6 +1,6 @@
-reports/
-*.json
-*.html
+reports/DAILUS
+reports/*.json
+reports/*.html
 Gemfile.lock
 rerun*
 debug.log
