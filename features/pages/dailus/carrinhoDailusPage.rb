@@ -7,7 +7,7 @@ class CarrinhoDailus < SitePrism::Page
 
  # button
   element :button_comprar, :css, '.product__buy > a'
-  element :button_remove_primeiro_item, :css, '#item-remove-218'
+  element :button_remove_primeiro_item, :css, '#item-remove-207'
 
   # link
   element :link_header_pinceis, :css, 'ul.menu.menu--main > li:nth-child(6) > a'
