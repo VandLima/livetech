@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'cucumber'
+gem 'cucumber', '~> 3.1', '>= 3.1.2'
 gem 'capybara'
 gem 'rspec'
 gem 'rake'
