@@ -16,8 +16,8 @@ Cenário: Validar que o produto foi adicionado corretamente ao carrinho
   Quando adicionar um produto no carrinho
   Então produto deve ser apresentado no carrinho
 
-# @positivo @dailus @regressao
-# Cenário: Limpar minha sacola
-#   Quando adicionar um produto no carrinho
-#   E clicar para limpar minha sacola
-#   Então exibirá mensagem que minha sacola esta vazia
+@positivo @dailus @regressao_ci
+Cenário: Limpar minha sacola
+  Quando adicionar um produto no carrinho
+  E clicar para limpar minha sacola
+  Então exibirá mensagem que minha sacola esta vazia
