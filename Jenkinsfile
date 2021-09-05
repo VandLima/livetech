@@ -1,39 +1,31 @@
 pipeline {
-   agent {
-       docker {
-           image 'anadsonpassos/quarentenarubywd'
-       }
-   }
-
-   stages {
-      stage('Build') {
-         steps {
-            echo 'Building or Resolve Dependencies!'
-            sh 'rm -f Gemfile.lock'
-            sh 'bundle install'
-         }
-      }
-     stage ('Test') {
-         steps {
-             echo 'Running regression tests'
-             sh 'bundle exec cucumber -p dailus -p ci -t @regressao_ci'
-         }
-         post {
-             always {
-                    cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', jsonReportDirectory: 'reports', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
-            }
+    agent {
+        docker {
+            image 'ruby'
         }
     }
-     stage ('UAT') {
-         steps {
-             echo 'Wait for User Acceptance'
-             input (message: 'Go to production?', ok: 'Yes')
+
+    stages {
+        stage('Biuld') {
+            steps {
+                echo 'Building Resolve dependencies!'
+            }
         }
-     }
-     stage ('Prod') {
-         steps {
-             echo 'webApp is Ready :)'
+        stage('Teste') {
+            steps {
+             echo 'Runing regression tests'
+            }
         }
-     }
-   }
+        stage('UAT') {
+            steps {
+                echo 'Wait for user Acceptence'
+                input (message: 'Go to prodution', ok: 'Yes')
+            }
+        }
+        stage('Prod') {
+            steps {
+                echo 'webApp is Ready :)'
+            } 
+        }
+    }
 }
